@@ -25,6 +25,8 @@ def getJobs(userPostal, selectedRange, selectedCategory):
         dist = calculate_distance(userPostal, jobObj['Postal Code'])
         if dist <= selectedRange:
             filteredJobs.append(jobObj)
+    if filteredJobs == []:
+        return False
     return filteredJobs
 
         
