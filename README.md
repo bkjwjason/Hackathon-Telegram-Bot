@@ -1,3 +1,3 @@
 # Hackathon-Telegram-Bot
 
-Hackathon bot to make volunteering easier!!!!
+Try out our bot @HelpANeighbourOut_bot on Telegram!
