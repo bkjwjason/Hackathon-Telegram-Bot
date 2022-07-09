@@ -1,7 +1,6 @@
 from faulthandler import cancel_dump_traceback_later
 from setuptools import Command
 import logging
-import telegram
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update, ChatAction, User
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler, CallbackContext
 
