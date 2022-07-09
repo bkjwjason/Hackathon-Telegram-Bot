@@ -1,7 +1,7 @@
 import firebase_admin
 import json
 from firebase_admin import db
-
+from distance import *
 
 cred_obj = firebase_admin.credentials.Certificate(
     "help-a-neighbour-out-firebase-adminsdk-3k1ih-a01592b112.json")
@@ -29,9 +29,4 @@ x = {
     "Desc": "Suck my balls"
 }
 
-
-
-# xdpd = ref.get()
-# for task in xdpd.values():
-#     print(task['Postal'])
-# print(distance.calculate_distance(738081, 821308))
+print(calculate_distance(738081, 821308));
