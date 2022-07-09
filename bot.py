@@ -7,7 +7,7 @@ logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 def main() -> None:
     # Start bot
-    TOKEN = "5553340518:AAHPPct5kqRZ62BXWRCj8_2u9EZnQzKA2tE"
+    TOKEN = "TOKEN"
     updater = Updater(TOKEN)
     PORT = int(os.environ.get('PORT', '8443'))
     # Get the dispatcher to register handlers
