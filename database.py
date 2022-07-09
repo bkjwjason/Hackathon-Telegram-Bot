@@ -19,8 +19,10 @@ def pushJob(jobObj):
 def getJobs(userPostal, selectedRange, selectedCategory):
     filteredJobs = []
     allJobs = jobsRef.get()
+    if allJobs == None:
+        return False
     for jobObj in allJobs.values():
-        dist = calculate_distance(userPostal, jobObj['Postal'])
+        dist = calculate_distance(userPostal, jobObj['Postal Code'])
         if dist <= selectedRange:
             filteredJobs.append(jobObj)
     return filteredJobs
