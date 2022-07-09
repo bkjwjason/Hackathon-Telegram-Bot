@@ -30,7 +30,7 @@ def path(update: Update, _:CallbackContext):
     else:
         #insert the listing code here
         reply_keyboard = [[2, 4]]
-        update.message.reply_text("Please choose your desired radius" "\nTo quit, please type /cancel", reply_markup = ReplyKeyboardMarkup(reply_keyboard))
+        update.message.reply_text("Please choose your desired radius (in km)." "\nTo quit, please type /cancel", reply_markup = ReplyKeyboardMarkup(reply_keyboard))
         return DISTANCE
 
 def show_jobs(update: Update, _:CallbackContext):
