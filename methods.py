@@ -142,4 +142,4 @@ start_conv_handler = ConversationHandler(
                         },
                         fallbacks=[CommandHandler('cancel', cancel)])
 
-bot = Bot("5553340518:AAHPPct5kqRZ62BXWRCj8_2u9EZnQzKA2tE")
+bot = Bot("TOKEN")
